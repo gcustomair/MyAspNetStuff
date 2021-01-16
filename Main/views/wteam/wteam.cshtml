@@ -1,0 +1,37 @@
+﻿@model MyApp.Web.Models.Wteam.WteamViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <strong>Worship Team page</strong>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Is singer?</th>
+                <th scope="col">Instrument</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>@Model.Name</td>
+                <td>@Model.Email</td>
+                <td>@Model.IsSinger</td>
+                <td>@Model.Instrument</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
